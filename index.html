@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Random Sentence Generator</title>
+</head>
+<body>
+  <h1>Random Sentence Generator</h1>
+  <label>Theme:
+    <select id="theme">
+      <option value="medical">Medical</option>
+      <option value="IT">IT</option>
+      <option value="business">Business</option>
+      <option value="financial">Financial</option>
+      <option value="conversation">General Conversation</option>
+    </select>
+  </label>
+
+  <label>Number of Sentences:
+    <select id="count">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+    </select>
+  </label>
+
+  <button onclick="generate()">Create</button>
+
+  <div id="output" style="margin-top:20px;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
