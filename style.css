@@ -234,14 +234,30 @@
   box-shadow: none;         /* some browsers add a glow—remove it too */
 }
 
-/* Collapse the output area when it has no content */
+/* hide the output box when it’s empty */
 #output {
-  display: none;      /* hide by default */
-  height: auto;       /* grow to fit when shown */
+  display: none;
 }
 
-/* Once there is text inside, show it and add spacing */
+/* show (and auto-size) it as soon as you generate text */
 #output:not(:empty) {
   display: block;
-  margin-top: 20px;    /* only add top margin when there’s something to show */
+}
+
+
+/* 1. Make all wrappers auto-height and in-flow */
+.home-page .div,
+.home-page .group,
+.home-page .overlap-group {
+  height: auto !important;
+  position: static !important;
+}
+
+/* 2. Make output flow normally */
+.home-page .according-to-theory {
+  position: static !important;
+  top: auto !important;
+  left: auto !important;
+  width: auto !important;
+  margin-top: 20px; /* so it’s spaced below the controls */
 }
