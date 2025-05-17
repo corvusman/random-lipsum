@@ -1,92 +1,72 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta charset="utf-8" />
-    <link rel="stylesheet" href="globals.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-
-
-  <!-- …your existing markup… -->
-  <script src="script.js"></script>
-
-
-    <div class="home-page">
-      <div class="div">
-        <div class="group">
-          <div class="overlap-group">
-            <div class="frame">
-              <div class="frame-2">
-
-<div class="frame-3">
-  <select id="theme" class="lorem-ipsum-dolor-si">
-    <option value="conversation">General Conversation</option>
-    <option value="medical">Medical</option>
-    <option value="business">Business</option>
-    <option value="financial">Financial</option>
-    <option value="IT">IT</option>
-  </select>
-</div>
-                
-<div class="frame-4">
-  <select id="count" class="lorem-ipsum-dolor-si">
-    <option value="1">1 Paragraph</option>
-    <option value="2">2 Paragraphs</option>
-    <option value="3">3 Paragraphs</option>
-    <option value="4">4 Paragraphs</option>
-  </select>
-</div>
-                
-                <!-- Generate button -->
-<div class="lorem-ipsum-dolor-si-wrapper" onclick="generate()">
-  <div class="text-wrapper">Generate</div>
-</div>
-
-              </div>
-      
-              <!-- Copy button -->
-<div class="frame-5" onclick="copyToClipboard()">
-  <img class="content-copy" src="icon_copy.svg" alt="Copy to clipboard" />
-  <div class="text-wrapper">Copy</div>
-</div>
-
-            </div>
-
-<div id="output" class="according-to-theory"></div>
-
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BlaBla Generator</title>
+  <link rel="stylesheet" href="globals.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="home-page">
+    <div class="div">
+      <!-- Controls -->
+      <div class="frame">
+        <div class="frame-2">
+          <!-- Theme selector -->
+          <div class="frame-3">
+            <select id="theme" class="lorem-ipsum-dolor-si">
+              <option value="conversation">General Conversation</option>
+              <option value="medical">Medical</option>
+              <option value="business">Business</option>
+              <option value="financial">Financial</option>
+              <option value="IT">IT</option>
+            </select>
+          </div>
+          <!-- Paragraph count selector -->
+          <div class="frame-4">
+            <select id="count" class="lorem-ipsum-dolor-si">
+              <option value="1">1 Paragraph</option>
+              <option value="2">2 Paragraphs</option>
+              <option value="3">3 Paragraphs</option>
+              <option value="4">4 Paragraphs</option>
+            </select>
           </div>
         </div>
-        <p class="disclaimer-this-tool">
-          <span class="span">Disclaimer:</span>
-          <span class="text-wrapper-2">
-            this tool is a joke. A glorious, grammatically-structured, buzzword-infused joke.<br /><br />Please do not
-            use the generated content in school or university assignments. Education is a serious endeavor and should be
-            treated with the respect it deserves — unlike the phrase &#34;The stakeholder synergy harmonizes the
-            empirical leverage pipeline,&#34; which we just made up on the spot.<br /><br />However... if you’re working
-            in
-          </span>
-          <span class="span">business</span>
-          <span class="text-wrapper-2"
-            >, feel free to copy, paste, and confuse your colleagues, clients, and possibly upper management. We fully
-            support the use of this generator in status reports, PowerPoints, annual reviews, funding applications, or
-            anywhere else you&#39;re expected to sound smart without actually saying anything.<br /><br />Use
-            responsibly. Or irresponsibly — as long as it&#39;s not for homework.<br /><br />2025 (c) Made in Aus</span
-          >
-        </p>
-        <div class="group-2">
-          <div class="frame-6">
-            <img class="img" src="BlaLogo.svg" />
-          </div>
-          <p class="p">Create one-of-a-kind, impossible-to-duplicate text in mere seconds.</p>
+        <!-- Generate button -->
+        <div class="lorem-ipsum-dolor-si-wrapper" onclick="generate()">
+          <div class="text-wrapper">Generate</div>
+        </div>
+        <!-- Copy button -->
+        <div class="frame-5" onclick="copyToClipboard()">
+          <img class="content-copy" src="icon_copy.svg" alt="Copy to clipboard" />
+          <div class="text-wrapper">Copy</div>
         </div>
       </div>
+
+      <!-- Output (initially empty) -->
+      <div id="output"></div>
+
+      <!-- Humorous disclaimer -->
+      <p class="disclaimer-this-tool">
+        <strong>Disclaimer:</strong> this tool is a joke. A wonderful, buzzword-infused joke.<br /><br />
+        Please <strong>do not</strong> use the generated content in school or university assignments—education deserves respect, not nonsense like
+        “the stakeholder synergy harmonizes the empirical leverage pipeline.”<br /><br />
+        However, if you work in <strong>business</strong>, you’re welcome to copy, paste, and bewilder your colleagues in reports, presentations, or reviews.<br /><br />
+        Use responsibly—or not. Just leave it out of your homework.
+      </p>
+
+      <!-- Logo & tagline -->
+      <div class="group-2">
+        <div class="frame-6">
+          <img class="img" src="BlaLogo.svg" alt="BlaBla Generator" />
+        </div>
+        <p class="p">Create one-of-a-kind, impossible-to-duplicate text in mere seconds.</p>
+      </div>
     </div>
+  </div>
 
-
-
+  <!-- JavaScript -->
+  <script src="script.js"></script>
 </body>
-
-  </body>
 </html>
